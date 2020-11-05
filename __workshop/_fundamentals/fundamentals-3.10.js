@@ -9,6 +9,12 @@
 
 function makeIntoTitle(sentence) {
   // Your code here
+  let splitString = sentence.split(" ");
+  let capitalize = splitString.map(
+    (s) => s.charAt(0).toUpperCase() + s.substring(1)
+  );
+  let joinString = capitalize.join(" ");
+  return joinString;
 }
 
 // Part 2 - Test

@@ -10,6 +10,12 @@
 
 function lastCharacter(str) {
   // Your code here
+  if (str.length==="" || typeof(str)==="number"){
+    return undefined;
+  }
+
+  return str[str.length-1];
+
 }
 
 // Part 2 - Test

@@ -19,6 +19,21 @@
 
 function calculator(arr) {
   // Your code here
+  if (arr[0] === "add") {
+    return arr[1] + arr[2];
+  } else if (arr[0] === "sub") {
+    return arr[1] - arr[2];
+  } else if (arr[0] === "mul") {
+    return arr[1] * arr[2];
+  } else if (arr[0] === "div") {
+    return arr[1] / arr[2];
+  } else if (arr[1] !== "number") {
+    return undefined;
+  } else if (arr[2] !== "number") {
+    return undefined;
+  } else {
+    return undefined;
+  }
 }
 
 // Part 2 - Test

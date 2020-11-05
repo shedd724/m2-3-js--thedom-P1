@@ -13,6 +13,16 @@
 
 function repeat(arr) {
   // Your code here
+  let str = "";
+  if (arr[1] <= 0) {
+    return " ";
+  } else if (arr[0] === "string" && arr[1] === "number") {
+    for (i = 0; i < arr[1]; i++) str = str + arr[0];
+
+    return str;
+  } else {
+    return undefined;
+  }
 }
 
 // Part 2 - Test

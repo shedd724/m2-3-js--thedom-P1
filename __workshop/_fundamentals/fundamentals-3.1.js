@@ -9,7 +9,12 @@
 
 function firstLetter(str) {
   // Your code here
-}
+  if (str === "") {
+    return undefined;
+  }
+  return str[0];
+}	
+
 
 // Part 2 - Test
 // --------------
